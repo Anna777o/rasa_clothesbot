@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - get_history
+  - greet
+  - affirm
+  - grat
+  - start
+  - get_suit
+  - bad
+  - get_clothes
+  - get_suitable
+  - show_his
+
+actions:
+  - action_give_clothes
+  - action_rec_clothes
+  - action_show_history
+entities:
+  - clothes
+
+
+responses:
+  utter_greet:
+  - buttons:
+    - payload: /affirm
+      title: Что надеть?
+    - payload: /show_his
+      title: Показать историю
+    - payload: /get_suit
+      title: Подобрать элемент одежды
+    button_type: vertical
+    text: Привет! Я могу рассказать об одежде по погоде, подобрать элемент одежды к заданному и показать историю подбора
+  #  text: Здравствуйте! Расскажу Вам об одежде по погоде
+  utter_show_history:
+  - text: "история показана!"
+  utter_grat:
+    - text: Обращайтесь
+    - text: Обращайся
+  utter_recommend_clothes:
+    - text: "одежда предложена!"
+  utter_deal:
+    - text: "😦"
+    - text: "☝️"
+  utter_ask:
+    - text: "Напишите предмет одежды, к которому нужен подбор, в формате 'что надеть с'"
+  utter_rec_clothes:
+    - text: "одежда предложена!"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

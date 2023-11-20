@@ -1,0 +1,5 @@
+action_endpoint:
+  url: "http://127.0.0.1:5055/webhook"
+#telegram:
+#    verify: "lr12_clothes_bot"
+#    webhook_url: "https:// https://4d3e-2a03-d000-4195-1ced-9118-a4e4-ee8b-cbe.ngrok.io/webhooks/telegram/webhook"
