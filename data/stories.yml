@@ -1,0 +1,50 @@
+version: "3.1"
+
+stories:
+
+- story: recommend_clothes
+  steps:
+  - intent: recommend_clothes
+  - action: action_give_clothes
+  - action: utter_recommend_clothes
+
+- story: start_chat
+  steps:
+    - intent: greet
+    - action: utter_greet
+- story: thanks
+  steps:
+    - intent: grat
+    - action: utter_grat
+- story: recommend_clothes_2
+  steps:
+  - intent: affirm
+  - action: action_give_clothes
+  - action: utter_recommend_clothes
+- story: start_2
+  steps:
+    - intent: start
+    - action: utter_greet
+- story: get_history_
+  steps:
+  - intent: get_history
+  - action: action_show_history
+  - action: utter_show_history
+- story: get_history_2
+  steps:
+  - intent: show_his
+  - action: action_show_history
+  - action: utter_show_history
+- story: bad_intent
+  steps:
+    - intent: bad
+    - action: utter_deal
+- story: suit_clothes
+  steps:
+    - intent: get_suit
+    - action: utter_ask
+- story: rec_suit
+  steps:
+    - intent: get_suitable
+    - action: action_rec_clothes
+    - action: utter_rec_clothes
