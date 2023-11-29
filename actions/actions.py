@@ -22,7 +22,7 @@ class ActionGiveClothes(Action):
         with open("copy.txt", "w") as file:
             file.write(str(user_id))
         if user_id == "1391324215":
-            dispatcher.utter_message("Если вдруг волк замолчал, то не вздумай его перебивать")
+            dispatcher.utter_message("")
         else:
             api_key = "7cec94224d571b7551b886f5cf636525"
             city = "Moscow"
